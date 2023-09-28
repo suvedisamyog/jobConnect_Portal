@@ -1,4 +1,18 @@
 # jobConnect_Portal
+
+#Highlighted Features:
+
+🌟Smart Job Recommendations: Receive personalized job suggestions based on your interests and past job applications using advanced cosine content-based filtering.
+
+📄Automatic CV Generation: Easily generate and download your CV from the details in your profile, streamlining the job application process.
+
+👥Job Seeker and Job Provider Profiles: Create comprehensive profiles showcasing skills, experience, and qualifications for job seekers and job providers.
+
+📊Application Status Tracking: Keep track of the status of your job applications, from submission to review and shortlisting.
+
+💾Save and Apply: Save interesting job listings and apply when convenient, ensuring you never miss out on opportunities.
+🔍🔒🌐
+
 <br><br>
 <p align="center">
   <strong>📸 Snaps</strong>
