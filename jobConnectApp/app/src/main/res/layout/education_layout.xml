@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:strokeWidth="0.5dp"
+    app:strokeColor="#f1f1ff"
+    app:cardElevation="50dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginVertical="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/schoolNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="School/College Name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/educationLevelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Education level" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/gradePercentageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade/Percentage" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

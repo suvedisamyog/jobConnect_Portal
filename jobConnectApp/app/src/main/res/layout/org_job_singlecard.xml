@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="50sp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="5dp"
+    app:contentPadding="10dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+      >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/mainLayout"
+
+        android:background="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="9dp"
+            android:padding="4dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_title"
+                        android:text="Title"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/gray_500"
+                        android:textSize="18sp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="35dp"
+                        android:textStyle="bold"
+                        />
+                    <ImageView
+                        android:id="@+id/card_option"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_menu_24"
+                        android:layout_alignParentEnd="true"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        app:tint="@color/black"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/iconCompany"
+                        android:layout_width="15dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/baseline_business_24"
+                        app:tint="@color/gray_300" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_cname"
+                        android:layout_toEndOf="@id/iconCompany"
+                        android:text="CompanyNAme"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_400"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/iconVaccency"
+                        android:layout_width="16dp"
+                        android:layout_height="17dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/baseline_group_24"
+                        app:tint="@color/gray_300"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_vacancy"
+                        android:layout_toEndOf="@id/iconVaccency"
+                        android:text="Vaccency"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_400"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+
+                    <ImageView
+                        android:id="@+id/iconEducation"
+                        android:layout_width="15dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/baseline_menu_book_24"
+                        app:tint="@color/gray_300"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_education"
+                        android:layout_toEndOf="@id/iconEducation"
+                        android:text="Education"
+                        android:textSize="12sp"
+                        android:textColor="@color/gray_400"
+                        android:singleLine="true"
+                        />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_empType"
+
+                        android:text="JobType"
+                        android:textSize="10sp"
+                        android:textColor="@color/green_200"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+
+                        android:background="@drawable/bg_job_type"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/d_endDate"
+                        android:text="Dealdile"
+                        android:textSize="10sp"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/gray_300"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="10dp"
+    android:id="@+id/numberOfApplicants"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:text="Total Applicants"/>
+
+    <TextView
+        android:id="@+id/applicantsNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="000"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="italic"
+        android:textColor="@color/blue"
+        android:id="@+id/viewApplicants"
+        android:clickable="true"
+        android:text="&lt;&lt;View Details&gt;&gt;" />
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "722772522217",
+    "project_id": "jobconnect-2b0da",
+    "storage_bucket": "jobconnect-2b0da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722772522217:android:25a8a8038b6592f352ac78",
+        "android_client_info": {
+          "package_name": "com.example.jobconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722772522217-plo6d7q2k68ub1l567njmcvraq9ea9h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobconnect",
+            "certificate_hash": "5bd5ac3448a6497d108e6636b1f5a8653f812c88"
+          }
+        },
+        {
+          "client_id": "722772522217-iqef4pm8c20vh8nhaafd1hp16cohfqia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEQSLDuOsTIkrf-dtFp1XUWYKMiM4eRt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722772522217-iqef4pm8c20vh8nhaafd1hp16cohfqia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

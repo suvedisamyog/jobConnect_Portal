@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JOB_PROVIDER_PART.Org_Profile"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/orgProfileView">
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/logincolor"
+              >
+              <Switch
+                  android:id="@+id/switchButton"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Edit Mode"
+                  android:checked="false"
+                  android:textStyle="bold|italic"
+                  android:textSize="20dp"
+                  android:textColor="@color/gray_050"
+                  android:layout_centerHorizontal="true"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginBottom="20dp"/>
+          </RelativeLayout>
+
+
+
+
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeWidth="5dp"
+                android:padding="5dp"
+                app:strokeColor="@color/orange"
+                android:scaleType="centerCrop"
+                android:layout_width="205dp"
+                android:layout_height="205dp"
+                android:src="@drawable/baseline_account_circle_24"
+                android:layout_gravity="center"
+                android:id="@+id/profileLogo"
+                android:layout_marginBottom="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagetextview"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Logo"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/changeLogo"
+                android:backgroundTint="@color/orange"
+                android:visibility="gone"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/orgDEmailF"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorEnabled="true"
+                    app:startIconCheckable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/orgDEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_email_24"
+                        android:drawableTint="@color/orange"
+
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/baseline_mode_edit_24"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/orgDNameF"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:hint="Name"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorEnabled="true"
+                    app:startIconCheckable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/orgDName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_perm_identity_24"
+                        android:drawableTint="@color/orange"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:id="@+id/editName"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    android:drawableStart="@drawable/baseline_mode_edit_24"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/orgDContactF"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:hint="Phone Number"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorEnabled="true"
+                    app:startIconCheckable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/orgDContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_phone_24"
+                        android:drawableTint="@color/orange"
+                        android:maxLength="10"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/editPhone"
+                    android:drawableStart="@drawable/baseline_mode_edit_24"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/orgDLocationF"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:hint="Location"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorEnabled="true"
+                    app:startIconCheckable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/orgDLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_location_on_24"
+                        android:drawableTint="@color/orange"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:textIsSelectable="true"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/editLocation"
+                    android:drawableStart="@drawable/baseline_mode_edit_24"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/orgDWebF"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:drawablePadding="10dp"
+                    android:hint="Website"
+                    android:textColorHint="@color/black"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeErrorColor="@color/red"
+                    app:endIconMode="clear_text"
+                    app:endIconTint="@color/black"
+                    app:errorEnabled="true"
+                    app:startIconCheckable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/orgDWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/baseline_web_24"
+                        android:drawableTint="@color/orange"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:id="@+id/editWebsite"
+                    android:drawableStart="@drawable/baseline_mode_edit_24"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnSaveChange"
+                android:backgroundTint="@color/orange"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container">
+
+    </FrameLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:minWidth="30dp"
+        android:layout_gravity="end|top"
+        android:id="@+id/settingOrg"
+        app:tint="@color/orange"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/baseline_menu_24"
+
+        />
+
+
+</FrameLayout>
+

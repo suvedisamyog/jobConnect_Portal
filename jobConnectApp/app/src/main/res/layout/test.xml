@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeWidth="5dp"
+        android:padding="5dp"
+        app:strokeColor="@color/orange"
+        android:scaleType="centerCrop"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_gravity="center"
+        android:id="@+id/profilePic"
+        android:layout_marginBottom="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photo"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/btnAddImg"
+        android:backgroundTint="@color/purple_200"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:visibility="visible"
+            android:clickable="false"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:singleLine="true"
+                android:clickable="true"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/navy_100"
+                android:enabled="false"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date of Birth"
+            android:id="@+id/dob"
+            android:textColor="@color/gray_400"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactNumber"
+                android:singleLine="true"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/navy_100"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="About Me"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userBio"
+
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:gravity="top"
+                android:textSize="15dp"
+                android:scrollbars="vertical"
+                android:textColor="@color/navy_100"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollHorizontally="false"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="heghiest Education"
+                android:textSize="15dp"
+
+                android:textColor="@color/black"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:id="@+id/eduQualification"
+                android:textSize="15dp"
+                android:entries="@array/Edu_Qualification"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Interested Industry"
+                android:textSize="15dp"
+
+                android:textColor="@color/black"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:spinnerMode="dialog"
+                android:id="@+id/industryInterest"
+                android:entries="@array/Industries"
+                android:textSize="15dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Interested Categories(select at least two)"
+                android:textAlignment="center"
+                android:textSize="15dp"
+
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/checkboxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Add RESUME/CV"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:backgroundTint="@color/purple_200"
+            android:id="@+id/uploadCv"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/cvPlacement"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="UPLOAD"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"
+            android:id="@+id/uploadProfile"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

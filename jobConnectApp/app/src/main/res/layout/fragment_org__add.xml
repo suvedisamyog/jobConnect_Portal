@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    tools:context=".JOB_PROVIDER_PART.Org_Add">
+
+    <!-- TODO: Update blank fragment layout -->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginHorizontal="20dp"
+         android:layout_gravity="center_horizontal">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/post_job_text"
+             android:text="Post A New Job"
+             android:textStyle="bold"
+             android:textAlignment="center"
+             android:textColor="@color/teal_200"
+             android:textAllCaps="true"
+             android:textSize="20dp"
+             android:padding="20dp"
+             />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Update A  Job"
+             android:textStyle="bold"
+             android:textAlignment="center"
+             android:textColor="@color/teal_200"
+             android:textAllCaps="true"
+             android:textSize="20dp"
+             android:padding="20dp"
+             android:id="@+id/update_job_text"
+             android:visibility="gone"
+             />
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/j_title_field"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColorHint="@color/black"
+             app:boxBackgroundMode="filled">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/j_title"
+                 android:background="@color/white"
+                 android:focusable="true"
+                 android:hint="Job Title"
+                 android:textSize="15dp"
+                 android:singleLine="true"
+                 android:textColorHint="@color/black"
+
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Number of vacancies:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="number"
+                 android:id="@+id/vacancies"
+                 android:digits="0123456789"
+                 android:text="1"
+                 />
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Employment Type:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/emp_type"
+                 android:entries="@array/Employment_Type"/>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Education Qualification:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/edu_requirement"
+                 android:entries="@array/Edu_Qualification"/>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Experience Level:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/experince"
+                 android:entries="@array/Experience_Level"/>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Application Deadline:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/deadline"
+                 android:entries="@array/Dead_Line"/>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Industry Type:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/industry"
+                 android:entries="@array/Industries"/>
+
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginBottom="15dp"
+             android:padding="15dp">
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_height="wrap_content"
+                 android:text="Job Category:"
+                 android:textSize="15dp"
+                 android:textColor="@color/black"/>
+             <Spinner
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:textSize="15dp"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/category"
+                 />
+
+
+         </LinearLayout>
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/j_salary_field"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColorHint="@color/black"
+             android:layout_marginBottom="20dp"
+             app:boxBackgroundMode="filled">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/j_salary"
+                 android:background="@color/white"
+                 android:focusable="true"
+                 android:hint="Salary"
+                 android:singleLine="false"
+                 android:textSize="15dp"
+                 android:textColorHint="@color/black"
+
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/j_description_field"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColorHint="@color/black"
+             android:layout_marginBottom="20dp"
+             app:boxBackgroundMode="filled">
+
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/j_description"
+                 android:background="@color/white"
+                 android:focusable="true"
+                 android:hint="Job Description"
+                 android:singleLine="false"
+                 android:textSize="15dp"
+                 android:textColorHint="@color/black"
+
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/j_company_field"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColorHint="@color/black"
+             android:layout_marginBottom="20dp"
+             app:boxBackgroundMode="filled">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/j_company"
+                 android:background="@color/white"
+                 android:focusable="false"
+                 android:enabled="false"
+                 android:textColor="@color/black"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+         <com.google.android.material.textfield.TextInputLayout
+             android:id="@+id/j_email_field"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:textColorHint="@color/black"
+             android:layout_marginBottom="20dp"
+             app:boxBackgroundMode="filled">
+             <com.google.android.material.textfield.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/j_email"
+                 android:background="@color/white"
+                 android:focusable="false"
+                 android:enabled="false"
+                 android:textColor="@color/black"
+                 />
+         </com.google.android.material.textfield.TextInputLayout>
+         <androidx.appcompat.widget.AppCompatButton
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/post_job_button"
+             android:backgroundTint="@color/orange"
+             android:textSize="15sp"
+             android:textStyle="bold"
+             android:padding="20dp"
+             android:textAllCaps="true"
+             android:text="POST A JOB"
+             />
+         <androidx.appcompat.widget.AppCompatButton
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/update_job_button"
+             android:backgroundTint="@color/orange"
+             android:textSize="15sp"
+             android:textStyle="bold"
+             android:padding="20dp"
+             android:textAllCaps="true"
+             android:text="UPDATE"
+             android:visibility="gone"
+             />
+     </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".JOB_SEEKER_PART.User_Home">
+
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="@color/logincolor"
+          >
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/logincolor"
+              android:id="@+id/homeTop">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+                     <com.google.android.material.card.MaterialCardView
+                         android:id="@+id/card_search"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:layout_marginLeft="20dp"
+                         android:layout_marginRight="20dp"
+                         android:layout_marginBottom="50dp"
+                         android:layout_marginTop="20dp"
+                         android:clickable="true"
+                         android:focusable="true"
+                         app:cardBackgroundColor="@color/logincolor"
+                         app:cardCornerRadius="20dp"
+                         app:cardElevation="50dp"
+                         app:strokeColor="@color/orange"
+                         app:strokeWidth="2dp">
+
+                         <androidx.appcompat.widget.SearchView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             app:iconifiedByDefault="false"
+                             app:queryHint="Search......."
+                             android:id="@+id/searchView"
+                             />
+
+
+                     </com.google.android.material.card.MaterialCardView>
+
+
+
+                 </LinearLayout>
+
+              <com.google.android.material.tabs.TabLayout
+                  android:background="@color/logincolor"
+                  android:id="@+id/tab_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:tabMode="fixed"
+                  app:tabGravity="fill"
+                  app:tabTextColor="@color/white"
+                  app:tabIndicator="@color/bottom_nav_color"
+                  app:tabIndicatorHeight="2dp"
+                  app:tabIndicatorGravity="bottom"
+                  style="@style/CustomTabLayout"
+                  app:tabSelectedTextColor="@color/bottom_nav_color" />
+
+
+
+          </LinearLayout>
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="150dp"
+              android:orientation="vertical"
+              android:background="@drawable/login_bg">
+
+              <ImageView
+                  android:background="@drawable/bg_strip_round"
+                  android:layout_width="40dp"
+                  android:layout_height="5dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_gravity="center" />
+
+
+              <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                  android:id="@+id/swipe_refresh_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:visibility="visible">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/showJobs"/>
+
+              </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+          </LinearLayout>
+
+      </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>

@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".JOB_SEEKER_PART.IndividualJobs"
+    >
+    <include
+        layout="@layout/progress_bar"
+        android:id="@+id/progressBar"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:fillViewport="true"
+
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/bg_rounded_top">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/bg_strip_round"
+                    android:layout_marginTop="8dp"
+                    android:layout_centerHorizontal="true" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginTop="16sp"
+                            android:layout_gravity="center_horizontal"
+                            app:strokeWidth="0.5dp"
+                            app:strokeColor="@color/orange"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="8dp">
+
+                            <ImageView
+                                android:id="@+id/photoPreview"
+                                android:scaleType="centerCrop"
+                                android:layout_margin="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <TextView
+                            android:text="Job Tiitle"
+                            android:id="@+id/jobTitle"
+                            android:padding="8dp"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/gray_500"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="16sp"
+                            android:layout_marginEnd="16sp"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Company Name  "
+                            android:id="@+id/jobCompany"
+                            android:textColor="@color/gray_500"
+                            android:textSize="14sp"
+                            android:padding="6dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16sp"
+                            android:layout_marginEnd="16sp"
+                            android:gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Job type"
+                            android:textColor="@color/green_300"
+                            android:id="@+id/jobType"
+                            android:textSize="14sp"
+                            android:paddingEnd="6dp"
+                            android:paddingStart="6dp"
+                            android:paddingBottom="2dp"
+                            android:paddingTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginStart="16sp"
+                            android:layout_marginEnd="16sp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/bg_job_type"
+                            android:gravity="center_horizontal"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginTop="14dp"
+                            app:strokeWidth="0.5dp"
+                            app:strokeColor="#f1f1f1"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="16sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:src="@drawable/baseline_info_24"
+                                        app:tint="@color/navy_100"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Job Detail"
+                                        android:textColor="@color/navy_100"
+                                        android:layout_marginStart="5dp"/>
+
+
+                                </LinearLayout>
+                         <androidx.recyclerview.widget.RecyclerView
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/recyclerView"/>
+
+                                <TextView
+                                    android:id="@+id/detail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/gray_400"
+                                    android:textIsSelectable="true"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginTop="14dp"
+                            app:strokeWidth="0.5dp"
+                            app:strokeColor="#f1f1f1"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="16sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:src="@drawable/baseline_description_24"
+                                        app:tint="@color/navy_100"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Job Description"
+                                        android:textColor="@color/navy_100"
+                                        android:layout_marginStart="5dp"/>
+
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/detailDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/gray_400"
+                                    android:textIsSelectable="true"/>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginTop="14dp"
+                            app:strokeWidth="0.5dp"
+                            app:strokeColor="#f1f1f1"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="16sp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp"
+                                        android:src="@drawable/baseline_work_24"
+                                        app:tint="@color/navy_100"/>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:text="Company Information"
+                                        android:textColor="@color/navy_100"
+                                        android:layout_marginStart="5dp"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconCompany"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:src="@drawable/baseline_business_24"
+                                            app:tint="@color/gray_300"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/iconCompany"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:text="Company Name"
+                                            android:id="@+id/info_jobCompany"/>
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconEmail"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:layout_marginTop="2dp"
+                                            android:src="@drawable/baseline_email_24"
+                                            app:tint="@color/gray_300"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/iconEmail"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:id="@+id/info_Email"
+                                            android:text="Email"/>
+
+                                    </RelativeLayout>
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconPhone"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:src="@drawable/baseline_phone_24"
+                                            app:tint="@color/gray_300"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/iconPhone"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:id="@+id/info_Phone"
+                                            android:text="Phone Number"/>
+
+                                    </RelativeLayout>
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_marginTop="3dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconLocation"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:src="@drawable/baseline_location_on_24"
+                                            app:tint="@color/gray_300"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/iconLocation"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:id="@+id/info_Location"
+                                            android:text="Location"/>
+
+                                    </RelativeLayout>
+
+
+
+                                    <RelativeLayout
+                                        android:layout_marginTop="3dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:padding="5dp">
+
+                                        <ImageView
+                                            android:id="@+id/iconWebsite"
+                                            android:layout_width="17dp"
+                                            android:layout_height="17dp"
+                                            android:layout_marginTop="2dp"
+                                            android:src="@drawable/baseline_public_24"
+                                            app:tint="@color/gray_300"/>
+
+                                        <TextView
+                                            android:layout_toEndOf="@id/iconWebsite"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="10dp"
+                                            android:id="@+id/info_Website"
+                                            android:text="Website"
+                                            android:textIsSelectable="true"/>
+
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <RelativeLayout
+                            android:id="@+id/btnHowToApply"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/btn_round_green_selector">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:text="Apply Now"
+                                    android:textColor="@color/white" />
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/appliedStatus"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="Status:"
+                                android:textStyle="bold"
+                                android:textAlignment="textEnd"                                />
+                            <TextView
+                                android:id="@+id/actualStatus"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold|italic"
+
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

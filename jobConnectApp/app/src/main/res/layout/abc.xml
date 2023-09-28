@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JOB_SEEKER_PART.cv_segment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/displayCv"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your cv "/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/makeCv"
+            android:orientation="vertical">
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/circular"
+                app:strokeWidth="5dp"
+                android:padding="5dp"
+                app:strokeColor="@color/orange"
+                android:scaleType="centerCrop"
+                android:layout_width="205dp"
+                android:layout_height="205dp"
+                android:src="@drawable/baseline_account_circle_24"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/profilePic"
+                android:layout_marginBottom="10dp"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Photo"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/btnAddImg"
+                android:backgroundTint="@color/purple_200"
+                />
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Basic information"
+                        android:textColor="@color/navy_100"
+
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:inputType="textPersonName"
+                        android:hint="Full Name"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginVertical="5dp"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email Address"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:inputType="phone"
+                        android:hint="Phone Number"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:hint="Permenant Address"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:inputType="text"
+                        android:hint="Temporary Address"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="15dp"
+
+                        android:layout_marginVertical="5dp"
+                        android:inputType="date"
+                        android:hint="Date of birth"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Educational information"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginStart="5dp"/>
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="heighest Level of education"
+                        android:textSize="15dp"
+                        android:inputType="textAutoComplete"
+                        android:spinnerMode="dropdown"
+                        android:entries="@array/Edu_Qualification"
+                        />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="➕ Add"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:id="@+id/addEducation"
+                        android:layout_gravity="center"
+                        android:background="@color/green_100"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Experiences"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginStart="5dp"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="➕ Add"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:id="@+id/addExperiences"
+                        android:background="@color/green_100"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Skills"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginStart="5dp"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="➕ Add"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:id="@+id/addSkills"
+                        android:background="@color/green_100"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="About Yourself"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginStart="5dp"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="About Me"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:lines="6"
+                            android:gravity="top"
+                            android:textSize="15dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/navy_100"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollHorizontally="false"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="14dp"
+                app:strokeWidth="0.5dp"
+                app:strokeColor="#f1f1f1"
+                app:cardElevation="50dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="16sp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Other"
+                        android:textColor="@color/navy_100"
+                        android:layout_marginStart="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textSize="15dp"
+
+                            android:textColor="@color/black"/>
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:spinnerMode="dialog"
+                            android:textSize="15dp"
+                            android:entries="@array/Genders"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="Interested Industry"
+                            android:textSize="15dp"
+
+                            android:textColor="@color/black"/>
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:spinnerMode="dialog"
+                            android:id="@+id/industryInterest"
+                            android:entries="@array/Industries"
+                            android:textSize="15dp"
+
+
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:text="Interested Categories(select at least two)"
+                            android:textAlignment="center"
+                            android:textSize="15dp"
+
+                            android:textColor="@color/black"/>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/checkboxContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

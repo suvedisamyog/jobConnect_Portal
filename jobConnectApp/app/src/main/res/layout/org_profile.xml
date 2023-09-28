@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/circular"
+        app:strokeWidth="5dp"
+        android:padding="5dp"
+        app:strokeColor="@color/orange"
+        android:scaleType="centerCrop"
+        android:layout_width="205dp"
+        android:layout_height="205dp"
+        android:src="@drawable/baseline_account_circle_24"
+
+        android:layout_gravity="center"
+        android:id="@+id/displayLogo"
+        android:layout_marginBottom="10dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Logo"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/oLogo"
+        android:backgroundTint="@color/orange"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:startIconCheckable="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/org_pro_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawableTint="@color/orange"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:startIconCheckable="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/org_pro_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_perm_identity_24"
+            android:drawableTint="@color/orange"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:enabled="false"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneField"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:hint="Phone Number"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:startIconCheckable="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/org_pro_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_phone_24"
+            android:drawableTint="@color/orange"
+            android:maxLength="10"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LocationField"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:hint="Location"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:startIconCheckable="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/org_pro_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:drawableTint="@color/orange"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:hint="Website (if any)"
+        android:textColorHint="@color/black"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeErrorColor="@color/red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/black"
+        app:errorEnabled="true"
+        app:startIconCheckable="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/org_pro_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_web_24"
+            android:drawableTint="@color/orange"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="UPLOAD"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/orange"
+        android:id="@+id/uploadOrg"
+        android:layout_marginHorizontal="15dp"
+        />
+
+
+
+
+
+</LinearLayout>

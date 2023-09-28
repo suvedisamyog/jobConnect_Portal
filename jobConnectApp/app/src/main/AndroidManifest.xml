@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/main_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jobconnect"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <receiver android:name=".Modules.MyNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.JobConnect.SHOW_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".UI_CONTROLLER.Org_profile_setup"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+
+        <activity
+            android:name=".UI_CONTROLLER.User_profile_setup"
+            android:exported="false" />
+        <activity
+            android:name=".JOB_SEEKER_PART.User_Nav"
+            android:exported="false" />
+        <activity
+            android:name=".JOB_PROVIDER_PART.Org_Nav"
+            android:exported="false" />
+        <activity
+            android:name=".UI_CONTROLLER.ForgetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".UI_CONTROLLER.Registration"
+            android:exported="false" />
+        <activity
+            android:name=".UI_CONTROLLER.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

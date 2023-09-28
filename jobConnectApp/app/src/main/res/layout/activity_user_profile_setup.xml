@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI_CONTROLLER.User_profile_setup"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/Uname"
+        android:textSize="40dp"
+
+        android:textStyle="bold|italic"
+        android:textColor="@color/orange"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="lets add some more information to complete your profile"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textSize="15dp"
+
+        android:textColor="@color/blue"
+        android:layout_marginBottom="20dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <include
+            layout="@layout/profile_setup"/>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

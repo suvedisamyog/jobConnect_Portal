@@ -1,0 +1,228 @@
+<resources>
+    <string name="app_name">Jobconnect</string>
+
+
+    <string-array name="Employment_Type">
+        <item>Select One</item>
+        <item>Full Time</item>
+        <item>Part Time</item>
+        <item>Internship</item>
+        <item>Remote</item>
+        <item>Contract</item>
+    </string-array>
+
+    <string-array name="Dead_Line">
+        <item>After 3 Days</item>
+        <item>After 5 Days</item>
+        <item>After 7 Days</item>
+        <item>After 9 Days</item>
+        <item>After 13 Days</item>
+    </string-array>
+
+    <string-array name="Edu_Qualification">
+        <item>Select One</item>
+        <item>None</item>
+        <item>School Level</item>
+        <item>High School Diploma or Equivalent</item>
+        <item>Bachelors Degree</item>
+        <item>Masters Degree</item>
+        <item>Doctorate/Ph.D</item>
+        <item>Vocational/Technical Certification in required field</item>
+    </string-array>
+
+
+    <string-array name="Experience_Level">
+        <item>Entry-Level(0 years)</item>
+        <item>Junior (1–3 years)</item>
+        <item>Mid–Level (3–5 years)</item>
+        <item>Senior (5–7 years)</item>
+        <item>Executive/Expert(7+ years)</item>
+    </string-array>
+
+
+    <string-array name="Industries">
+        <item>Select One</item>
+        <item>Information Technology(IT)</item>
+        <item>Healthcare</item>
+        <item>Finance/Banking</item>
+        <item>Education</item>
+        <item>Manufacturing</item>
+        <item>Retail</item>
+        <item>Engineering</item>
+        <item>Media/Entertainment</item>
+        <item>Hospitality/Tourism</item>
+        <item>Marketing/Advertising</item>
+    </string-array>
+
+    <string-array name="it_categories">
+        <item>Software Development/Engineering</item>
+        <item>Web Development/Design</item>
+        <item>Database Administration</item>
+        <item>Network/Systems Administration</item>
+        <item>IT Project Management</item>
+    </string-array>
+
+    <string-array name="healthcare_categories">
+        <item>Medical Doctor</item>
+        <item>Physician</item>
+        <item>Nursing</item>
+        <item>Allied Health</item>
+        <item>Medical Research</item>
+        <item>Healthcare Administration</item>
+    </string-array>
+
+    <string-array name="finance_categories">
+        <item>Investment Banking</item>
+        <item>Financial Planning</item>
+        <item>Accounting</item>
+        <item>Risk Management</item>
+        <item>Banking Operations</item>
+    </string-array>
+
+    <string-array name="education_categories">
+        <item>Teaching</item>
+        <item>School Administration</item>
+        <item>Curriculum Development</item>
+        <item>Academic Research</item>
+        <item>Student Services</item>
+    </string-array>
+
+    <string-array name="manufacturing_categories">
+        <item>Production</item>
+        <item>Quality Assurance</item>
+        <item>Supply Chain</item>
+        <item>Maintenance</item>
+        <item>Process Engineering</item>
+    </string-array>
+
+    <string-array name="retail_categories">
+        <item>Sales</item>
+        <item>Merchandising</item>
+        <item>Store Management</item>
+        <item>Customer Service</item>
+        <item>E-commerce</item>
+    </string-array>
+
+    <string-array name="marketing_categories">
+        <item>Digital Marketing</item>
+        <item>Brand Management</item>
+        <item>Market Research/Analysis</item>
+        <item>Advertising Campaigns</item>
+        <item>Public Relations</item>
+    </string-array>
+
+    <string-array name="hospitality_categories">
+        <item>Hotel Management</item>
+        <item>Food and Beverage Service</item>
+        <item>Event Planning</item>
+        <item>Travel Services</item>
+        <item>Hospitality Operations</item>
+    </string-array>
+
+    <string-array name="engineering_categories">
+        <item>Mechanical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Aerospace Engineering</item>
+        <item>Chemical Engineering</item>
+    </string-array>
+
+    <string-array name="media_categories">
+        <item>Journalism</item>
+        <item>Film/TV Production</item>
+        <item>Graphic Design</item>
+        <item>Performing Arts</item>
+        <item>Social Media Management</item>
+    </string-array>
+
+    <string-array name="default_categories">
+        <item>Select One</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Do not Disclose</item>
+
+    </string-array>
+
+
+    <string-array name="allCategories">
+        <!-- IT Categories -->
+        <item>Software Development/Engineering</item>
+        <item>Web Development/Design</item>
+        <item>Database Administration</item>
+        <item>Network/Systems Administration</item>
+        <item>IT Project Management</item>
+
+        <!-- Healthcare Categories -->
+        <item>Medical Doctor</item>
+        <item>Physician</item>
+        <item>Nursing</item>
+        <item>Allied Health</item>
+        <item>Medical Research</item>
+        <item>Healthcare Administration</item>
+
+        <!-- Finance Categories -->
+        <item>Investment Banking</item>
+        <item>Financial Planning</item>
+        <item>Accounting</item>
+        <item>Risk Management</item>
+        <item>Banking Operations</item>
+
+        <!-- Education Categories -->
+        <item>Teaching</item>
+        <item>School Administration</item>
+        <item>Curriculum Development</item>
+        <item>Academic Research</item>
+        <item>Student Services</item>
+
+        <!-- Manufacturing Categories -->
+        <item>Production</item>
+        <item>Quality Assurance</item>
+        <item>Supply Chain</item>
+        <item>Maintenance</item>
+        <item>Process Engineering</item>
+
+        <!-- Retail Categories -->
+        <item>Sales</item>
+        <item>Merchandising</item>
+        <item>Store Management</item>
+        <item>Customer Service</item>
+        <item>E-commerce</item>
+
+        <!-- Marketing Categories -->
+        <item>Digital Marketing</item>
+        <item>Brand Management</item>
+        <item>Market Research/Analysis</item>
+        <item>Advertising Campaigns</item>
+        <item>Public Relations</item>
+
+        <!-- Hospitality Categories -->
+        <item>Hotel Management</item>
+        <item>Food and Beverage Service</item>
+        <item>Event Planning</item>
+        <item>Travel Services</item>
+        <item>Hospitality Operations</item>
+
+        <!-- Engineering Categories -->
+        <item>Mechanical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Aerospace Engineering</item>
+        <item>Chemical Engineering</item>
+
+        <!-- Media Categories -->
+        <item>Journalism</item>
+        <item>Film/TV Production</item>
+        <item>Graphic Design</item>
+        <item>Performing Arts</item>
+        <item>Social Media Management</item>
+
+
+    </string-array>
+
+
+</resources>
